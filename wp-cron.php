@@ -195,23 +195,23 @@ function cooking_class ()
                         $email_message .= __ ( 'Class' ) . ': <strong>' . $class_name . '</strong><br>';
                         $email_message .= __ ( 'Date' ) . ': <strong>' . $class_start_date . '</strong><br>';
                         $email_message .= __ ( 'Time' ) . ': <strong>' . $class_start_time . '</strong><br>';
-                        $email_message .= __ ( 'Venue' ) . ': <strong>2/F, Fortress, Shop A, Pun Tak Building, 478-484 Lockhart Road, Causeway Bay, Hong Kong</strong><br><br>';
+                        $email_message .= __ ( 'Venue' ) . ': <strong>Address</strong><br><br>';
 
                         $email_message .= __ ( 'Login ID' ) . ': <strong>' . $login_id . '</strong><br>';
                         $email_message .= __ ( 'Password' ) . ': <strong>' . $login_pass . '</strong><br>';
                         $email_message .= __ ( 'Valid Date' ) . ': ' . __ ( 'Until' ) . ' <strong>' . date ( 'd-m-Y', strtotime ( $deadline ) ) . '</strong><br>';
-                        $email_message .= __ ( 'Booking Link : http://delonghiacademy.com.hk/cooking-class/' ) . '<br><br>';
+                        $email_message .= __ ( 'Booking Link : home_base/cooking-class/' ) . '<br><br>';
 
                         $email_message .= __( 'Best Regards,' ) . '<br>';
-                        $email_message .= __( 'Janet Cheung' ) . '<br>';
-                        $email_message .= '<img src="http://delonghiacademy.com.hk/wp-content/themes/lotus/images/email_signature.png"/><br>';
-                        $email_message .= "De' Longhi Kenwood A.P.A. Ltd.<br>";
-                        $email_message .= __( '16/F., Tins Enterprises Centre, 777 Lai Chi Kok Road, Cheung Sha Wan, Kowloon, Hong Kong' ) . '<br>';
-                        $email_message .= __( 'Janet.cheung@delonghigroup.com' );
+                        $email_message .= __( 'Name' ) . '<br>';
+                        $email_message .= '<img src="URL"/><br>';
+                        $email_message .= "Inc.";
+                        $email_message .= __( 'address' ) . '<br>';
+                        $email_message .= __( 'email' );
                         $email_message .= '</p>';
 
-                        $headers = array ( 'Content-Type: text/html; charset=UTF-8', 'Delonghi HK <info.hk@delonghigroup.com>' );
-                        $subject = 'Delonghi HK - Cooking Class Registration';
+                        $headers = array ( 'Content-Type: text/html; charset=UTF-8', 'Demo <email>' );
+                        $subject = 'Booking Class Registration';
 
                         wp_mail ( $email, $subject, $email_message, $headers );
 
