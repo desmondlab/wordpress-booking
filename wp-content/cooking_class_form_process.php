@@ -99,12 +99,12 @@ $l = ICL_LANGUAGE_CODE;
                             $email_message .= __( 'Our administrator will review your information. If everything is valid, a set of login and password will be sent to you via email.' ) . '<br>';
                             $email_message .= __( 'The review process will take around 5 working days.' ) . '<br><br>';
                             $email_message .= __( 'Best Regards,' ) . '<br>';
-                            $email_message .= __( 'Janet Cheung' ) . '<br>';
-                            $email_message .= '<img src="http://delonghiacademy.com.hk/wp-content/themes/lotus/images/email_signature.png"/><br>';
+                            $email_message .= __( 'Name' ) . '<br>';
+                            $email_message .= '<img src="URL"/><br>';
                             $email_message .= "De'Longhi Kenwood A.P.A. Ltd.<br>";
-                            $email_message .= __( '16/F., Tins Enterprises Centre, 777 Lai Chi Kok Road, Cheung Sha Wan, Kowloon, Hong Kong' ) . '<br>';
-                            $email_message .= __( 'Janet.cheung@delonghigroup.com' ) . '<br>';
-                            $email_message .= __( 'www.delonghigroup.com' );
+                            $email_message .= __( 'address' ) . '<br>';
+                            $email_message .= __( 'email' ) . '<br>';
+                            $email_message .= __( 'URL' );
                             $email_message .= '</p>';
 
                             $headers = array('Content-Type: text/html; charset=UTF-8', 'Delonghi HK <info.hk@delonghigroup.com>');
